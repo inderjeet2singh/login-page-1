@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    /* font-family:  sans-serif; */
+
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top right,#26c8cd,#9e52f0,#fc00ff)
+
+}
+
+.container{
+    background-color: white;
+    /* border: 1px solid black; */
+    padding: 2%;
+    border-radius: 8px;
+    /* height: 90vh; */
+}
+.innercontainer{
+    /* border: 1px solid black; */
+    width: 20vw;
+    height: 80vh;
+}
+.loginTxt{
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+    margin: 20px;
+    cursor: default;
+}
+
+
+.name>input{
+    background: none;
+    border: none;
+    border-bottom:2px solid rgba(0, 0, 0, 0.322);
+    width: 100%;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 10px;
+    outline: none;
+    padding-left: 35px;
+    /* margin-bottom: 10px; */
+}
+
+                               /* animation */
+.name{
+    text-align: center;
+    /* border: 1px solid black; */
+    /* position: relative; */
+
+}
+.spantag{
+    display:inline-block;
+    width:0px;
+    height: 2px;
+    background: #000000cc;
+    position: relative;
+    top:-17px;
+    -webkit-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+
+}
+
+.inputTxt:hover, .inputTxt:active, .inputTxt:focus{
+    outline: none;
+}
+
+.inputTxt:hover+.spantag,
+.inputTxt:active+.spantag, 
+.inputTxt:focus+.spantag{
+  width:100%;
+  
+}
+  /* label  */
+  .name>label{
+     text-align: left;
+     font-weight: 600;
+     /* opacity: 0.9999; */
+     display: block;
+     font-size: 12px;
+     margin-top: 10px;
+ }
+
+.pswd>label{
+    margin-top: -10px;
+}
+
+.forget{
+    /* cursor: po; */
+    font-weight: 600;
+    font-size: 13px;
+    text-align: right;
+    opacity: 0.5;
+}
+.forget a{
+    text-decoration: none;
+}
+
+
+.loginBtn{
+    /* border: 1px solid black; */
+    padding: 20px 0;
+}
+.loginBtn>input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    color: rgba(255, 255, 255, 0.959);
+    background: linear-gradient(to right,#26c8cd,#9e52f0,#fc00ff);
+
+}
+
+::placeholder{
+    font-weight: 600;
+
+}
+:-ms-input-placeholder{
+    font-weight: 600;
+}
+
+::-ms-input-placeholder{
+    font-weight: 600;
+
+}
+
+.socialLinks{
+    cursor: default;
+    margin: 22px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.socialLinks>p{
+    /* border: 1px solid black; */
+    font-weight: 600;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+.links>a:not(:last-child){
+    /* border: 1px solid black; */
+    /* text-decoration: none; */
+    margin-right: 10px;
+}
+.links{
+    display : flex;
+}
+.footer{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 19vh;
+}
+.footer a{
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+}
+.footer p{
+    /* border: 1px solid black; */
+    cursor: default;
+    font-weight: 500;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+}
+
+    /* icon in input */
+.inputIcone{
+    position: absolute;
+    margin: 8px;
+    margin-top: 9px;
+    padding: 0;
+    opacity: 0.6;
+    /* border: 1px solid black; */
+}
+
+
+/* img g+ */
+
+#pp{
+    /* border: 1px solid black; */
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #00ffff;
+    filter: invert(100%);
+}
+
